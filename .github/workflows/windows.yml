@@ -28,3 +28,4 @@ jobs:
       with:
         name: icebox-master-win64
         path: bin
+        
