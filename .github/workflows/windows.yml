@@ -22,3 +22,10 @@ jobs:
       run: |
         $threads = (Get-CimInstance Win32_ComputerSystem).NumberOfLogicalProcessors
         cmake --build . --config Release --parallel $threads
+        
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: windows-stealth
+        path: out
+        
