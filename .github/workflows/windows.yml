@@ -28,4 +28,3 @@ jobs:
       with:
         name: icebox-stealth-win64
         path: bin
-        
