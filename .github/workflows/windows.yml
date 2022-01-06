@@ -22,3 +22,9 @@ jobs:
       run: |
         $threads = (Get-CimInstance Win32_ComputerSystem).NumberOfLogicalProcessors
         cmake --build . --config Release --parallel $threads
+
+    - name: Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: icebox-master-win64
+        path: bin
