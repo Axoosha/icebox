@@ -26,6 +26,6 @@ jobs:
     - name: Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: windows-stealth
+        name: icebox-stealth-win64
         path: bin
         
