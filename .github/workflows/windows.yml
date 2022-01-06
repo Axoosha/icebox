@@ -27,5 +27,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: windows-stealth
-        path: ${{ github.workspace }}
+        path: bin
         
